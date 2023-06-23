@@ -15,6 +15,7 @@ header {
     position: fixed;
     top: 0;
     width: 99%;
+    opacity: 0.9;
 }
 
 header p {
@@ -90,7 +91,6 @@ section {
 
 .about-grid {
     display: grid;
-
     width:80%;
     max-width: 600px;
     margin:0 auto;
@@ -103,7 +103,7 @@ section {
     height: 600px;
     position: absolute;
     left: 200px;
-    top: 900px;
+    top: 830px;
     z-index: -1;
 }
 
@@ -116,7 +116,69 @@ section {
     box-shadow: 4px 4px 4px rgb(119, 112, 106);
     position: relative;
     left: 250px;
-    top: 380px;
+    top: 310px;
     border: 3px solid rgb(111, 82, 43);
+    z-index: -1;
+}
+
+/*This is jounery showcase projects*/
+.jounery-head {
+    width: 100%;
+    height: auto;
+    color: #f1f0f2;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+    position: relative;
+    top: 550px;
+    justify-content: center;
+    text-align: center;
+}
+
+#myJounery {
+    position: relative;
+    left: 0;
+    top: 450px;
+}
+
+.jounery-container {
+    display: flex;
+    
+}
+
+.cards {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(111, 82, 43);
+    margin: 30px;
+    color: #f1f0f2;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    border-radius: 15px;
+}
+
+.cards-content img {
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/*Footer info*/
+footer {
+    width: 100%;
+    height: auto;
+    color:#f1f0f2;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    position: relative;
+    top: 500px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+   
+}
+
+footer svg {
+    color:rgb(111, 82, 43);
 }
 
