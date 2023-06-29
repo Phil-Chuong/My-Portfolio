@@ -12,18 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Lilita+One&family=Playfair+Display:ital@1&family=Yellowtail&display=swap" rel="stylesheet">
+    <!--Mobile Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <p>Phil Chuong</p>
-        <nav class="topnav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutMe">About</a></li>
-                <li><a href="#myJounery">Jounery</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
+        <nav>
+            <div class="topnav">
+                <ul>
+                    <li ><a class="active" href="#home">Phil Chuong</a></li>
+                    <li style="float:right"><a href="#contacts">Contacts</a></li>
+                    <li style="float:right"><a href="#myJourney">Journey</a></li>
+                    <li style="float:right"><a href="#aboutMe">About</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
     </header>
     
@@ -49,7 +55,7 @@
                 </div>
                 <div class="child-content">
                     <p>Something about Me,<br>
-                     AM embarking on a new jounery as an Software Developer, <br>bringing a challenging and fulling career in to my life. 
+                     AM embarking on a new journey as an Software Developer, <br>bringing a challenging and fulling career in to my life. 
                     <br>
                     The future lay within my creativity and knowlenge to provide for you and I.
                     </p>  
@@ -58,8 +64,8 @@
         </section>
         
         
-        <section id="myJounery">
-            <div class="jounery-head">
+        <section id="myJourney">
+            <div class="journey-head">
                 <p>Showcase</p>
                 <div claass="skills">
                     <div class="skill-logo">
@@ -86,7 +92,7 @@
                 </div>
             </div>
         
-            <div id="jounery-projects" class="jounery-container">
+            <div id="journey-projects" class="journey-container">
                 <div class="cards">
                     <div class="cards-content">
                         <img src="/Images/Logo.jpg" alt="Cinque Terre" width="250" height="300">
