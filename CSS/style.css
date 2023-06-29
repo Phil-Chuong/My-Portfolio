@@ -19,7 +19,7 @@ header {
     background-color: black;
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 100%;
     opacity: 0.9;
 }
 
@@ -141,7 +141,7 @@ li a {
     font-size: 50px;
     font-family: 'Bangers', cursive;
     position: relative;
-    top: 100px;
+    top: 10px;
     justify-content: center;
     text-align: center;
     z-index: -1;
@@ -168,11 +168,12 @@ li a {
 /*Project section*/
 .jounery-container {
     display: flex;
-    position: relative;
+    position: relative absolute;
     top: 100px;
     z-index: -1;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .cards {
@@ -192,10 +193,6 @@ li a {
 .cards-content img {
     border-radius: 15px;
     margin-top: 20px;
-}
-
-desc a {
-    cursor: pointer;
 }
 
 .desc p a:link {
@@ -234,8 +231,8 @@ footer svg {
     color:rgb(111, 82, 43);
 }
 
-/*Media queries*/
-@media screen and (max-width: 576px) {
+/*Media query*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     header {
         display: block;
    }
@@ -258,9 +255,12 @@ footer svg {
    }
 
    .intro {
-    height: 600px;
+    height: 450px;
    }
 
+   .logo img {
+    height: 450px;
+   }
 
    /*about me section*/
    .about-parent {
@@ -270,36 +270,36 @@ footer svg {
 
    .child-img {
     position: relative;
-    left: -150px;
-    top: -80px;
+    left: -190px;
+    top: -60px;
    }
 
    .child-img img {
-    width: 450px;
+    width: 420px;
     height: 300px;
    }
 
    .child-content {
     font-size: 17px;
     position: relative;
-    left: 40px;
-    top: -100px;
+    left: 0px;
+    top: -80px;
    }
 
    /*card content*/
    .cards {
-    width: 100%;
+    width: 400px;
    }
 
     /*showcase*/
    .jounery-head {
-    top: -10px;
+    top: 30px;
    }
 
    .jounery-container {
-    top: -30px;
-   }
-   
+    top: 10px;
+   } 
+
    /*footer*/
    footer {
     display: inline-block;
@@ -314,19 +314,42 @@ footer svg {
         text-align: center;
     }
 
-
-
-
-
 }
 
-@media screen and (max-width: 768px) {
-    nav {
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+    /*about me section*/
+    .about-parent {
+        width: 100%;
+        height: 400px;
+       }
     
+       .child-img {
+        position: relative;
+        left: -200px;
+        top: -60px;
+       }
+    
+       .child-img img {
+        width: 725px;
+        height: 300px;
+       }
+    
+       .child-content {
+        font-size: 17px;
+        position: relative;
+        left: 120px;
+        top: -80px;
+       }
+
+    /*showcase heading*/
+    .jounery-head {
+        top: 20px;
     }
-    
-}
 
-@media screen and (max-width: 992px) {
-    
+    /*footer*/
+    footer {
+        display: inline-flex;
+        flex-wrap: wrap;
+        top: 5px;
+    }
 }
