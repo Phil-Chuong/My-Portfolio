@@ -14,18 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Lilita+One&family=Playfair+Display:ital@1&family=Yellowtail&display=swap" rel="stylesheet">
     <!--Mobile Navbar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Javascript/script.JS"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="topnav">
-                <ul>
-                    <li ><a class="active" href="#home">Phil Chuong</a></li>
-                    <li style="float:right"><a href="#contacts">Contacts</a></li>
-                    <li style="float:right"><a href="#myJourney">Journey</a></li>
-                    <li style="float:right"><a href="#aboutMe">About</a></li>
-                </ul>
+                    <span ><a class="active" href="#home">Phil Chuong</a></span>
+                    <div id="myLinks">  
+                        <span style="float:right"><a href="#contacts">Contacts</a></span>
+                        <span style="float:right"><a href="#myJourney">Journey</a></span>
+                        <span style="float:right"><a href="#aboutMe">About</a></span>  
+                    </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                 </a>
@@ -35,23 +36,21 @@
     
     
     <main>
-        <section class="home-sect">
-           <div id="home" class="main-container" >
+        <section id="home" class="container">
                 <div class="child-container">
                     <div class="intro">
                     <p>Hey there! <br>am <i class="name">Phil Chuong,</i> <br>Full Stack Software Developer</p>
                     </div>
                     <div class="logo">
-                    <img src="/Images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg" class="logo">
+                    <img src="/Images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg" class="logo" alt="man watching in to space">
                     </div>
                 </div>
-            </div> 
         </section>
         
         <section id="aboutMe">
             <div class="about-parent">
                 <div class="child-img">
-                    <img src="/Images/luca-bravo-9l_326FISzk-unsplash.jpg">
+                    <img src="/Images/luca-bravo-9l_326FISzk-unsplash.jpg" alt="computer desk">
                 </div>
                 <div class="child-content">
                     <p>Something about Me,<br>
@@ -95,21 +94,21 @@
             <div id="journey-projects" class="journey-container">
                 <div class="cards">
                     <div class="cards-content">
-                        <img src="/Images/Logo.jpg" alt="Cinque Terre" width="250" height="300">
+                        <img src="/Images/Logo.jpg" alt="personal logo" width="250" height="300">
                         <div class="desc"><p><a href="https://www.w3schools.com/">Add a description of the project here</a></p></div>
                     </div>
                 </div>
     
                 <div class="cards">
                     <div class="cards-content">
-                        <img src="/Images/Logo.jpg" alt="Cinque Terre" width="250" height="300">
+                        <img src="/Images/Logo.jpg" alt="personal logo" width="250" height="300">
                         <div class="desc"><p><a href="https://www.w3schools.com/">Add a description of the project here</a></p></div>
                     </div>
                 </div>
     
                 <div class="cards">
                     <div class="cards-content">
-                        <img src="/Images/Logo.jpg" alt="Cinque Terre" width="250" height="300">
+                        <img src="/Images/Logo.jpg" alt="personal logo" width="250" height="300">
                         <div class="desc"><p><a href="https://www.w3schools.com/">Add a description of the project here</a></p></div>
                     </div>
                 </div>
