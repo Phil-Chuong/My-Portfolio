@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(/Images/andrej-lisakov-g3z-CgUiPtg-unsplash.jpg);
     background-size: cover;
@@ -246,14 +250,14 @@ footer svg {
         display: inline-flex;
    }*/
 
-    nav {
+    .topnav {
         overflow: hidden;
         background-color: #333;
         position: relative;
     }
 
     .topnav #myLinks {
-        display: none;
+        display: block;
         position: fixed;
         margin-top: 80px;
         background-color: #333;
@@ -276,7 +280,7 @@ footer svg {
         display: block;
         position: absolute;
         right: 10px;
-        top: 25px;
+        top: 15px;
         position: fixed;
         padding: 10px;
       }
@@ -375,6 +379,11 @@ footer svg {
 }
 /* Media query - TABLET*/
 @media only screen and (min-width: 581px) and (max-width: 969px) {
+    
+    .topnav {
+        display: visible;
+    }
+    
     .icon {
         display: none;
     }
